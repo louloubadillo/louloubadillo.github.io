@@ -1,0 +1,116 @@
+/* CORE */
+html{
+	color:#fff;
+	background-image: url("img/background.jpeg");
+	font-family: 'Didact Gothic', serif;
+}
+body {
+  color:#ffffff;
+   }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Didact Gothic', serif;
+  text-transform: uppercase; 
+}
+
+h1.nombre{
+	color:#3dffd8;
+}
+
+/* LINKS */
+a:link {
+    color: #fff;
+    text-decoration: none; 
+}
+
+a:visited {
+    color: #fff; 
+}
+
+a:hover {
+    color: #73e1d9;
+}
+
+/* NAV */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* CSS GRID - HOME */
+#wrapper{
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(4,auto);
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+.cv{
+	grid-column: 12/ 15;
+	grid-row: 1 / 2;
+	text-align: center;
+}
+.description{
+	grid-column: 4/ 10;
+	grid-row: 1 / 2;
+	text-align: center;
+}
+.logo{
+	grid-column: 2/3; 
+	grid-row: 4/5; 
+	text-align: center;
+	padding: 20px; 
+}
+.nav{
+	grid-column: 3/ 13;
+	grid-row: 4/ 5;
+}
+.portfolio{
+	grid-column: 4 / 11;
+	grid-row: 2 / 4;
+  margin-top: 10%;  
+}
+.activities{
+	grid-column: 12/ 15;
+	grid-row: 2/ 3;
+}
+.experience{
+	grid-column: 1 / 3;
+	grid-row: 3 / 4;
+  margin-bottom: 10%; 
+}
+.contact{
+  grid-column: 12 / 14;
+  grid-row: 3 / 4;
+  margin-top: 10%; 
+}
+.education{
+  grid-column: 3/ 5;
+  grid-row: 3 / 4;
+}
+.items{
+  grid-column: 1/ 4;
+  grid-row: 2 / 3;  
+}
+
+
+
+
