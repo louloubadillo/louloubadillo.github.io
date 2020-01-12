@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	    <title>Activities</title>
+	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<style type="text/css">
+			html, body {
+                margin:0;
+                padding:0;
+                background-image: url("img/background.jpeg");
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Source Sans Pro', sans-serif;
+                text-transform: uppercase; 
+                color:#3dffd8;
+            }
+            p{
+              font-family: 'Source Sans Pro', sans-serif;
+              color:#000;
+              font-weight: 600;
+              font-size: 30px;
+            }
+            #header{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto; 
+                grid-gap: 10px;
+                margin: 0 auto;
+            }
+            .logo{
+                grid-column: 1 / 2;
+	            grid-row: 1 / 2;
+            }
+            .return-button{
+                grid-column: 4 / 5;
+                grid-row: 1 / 2;
+                text-align: center;
+            }
+            a:link {
+                color: #fff;
+                text-decoration: none; 
+            }
+                a:visited {
+                color: #fff; 
+            }
+                a:hover {
+                color: #73e1d9;
+            }
+            #wrapper{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: auto auto; 
+                grid-gap: 10px;
+                margin: 0 auto;
+            }
+            .title{
+                grid-column: 2 / 4;
+                grid-row: 1 / 2;
+                text-align: center;
+            }
+            .markers{
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                margin-left: 20px;
+                align-content: center;
+            }
+            .info{
+                grid-column: 2 / 5;
+                grid-row: 2 / 3;
+                margin-right: 10%;
+            }
+
+		</style>
+	</head>
+	<body>
+        <div id = "header">
+            <div class="logo">
+				<img src="logo.png" width= "30%">
+            </div>
+
+            <div class="return-button">
+                <a href="index.html"><h2> Home </h2></a>
+            </div>
+        </div>
+
+        <div id = "wrapper">
+            <div class="title">
+				<h1>About Me</h1>
+            </div>
+			<div class="markers">
+				<img src="img/write.png" width= "200px">
+            </div>
+
+            <div class="info">
+                <p>My name is Lourdes Badillo. I am a Computer Science student.</p> 
+                <p>I have a passion for technology and entrepreneurship. This has led to many projects.</p>
+                <p>I love to learn and share my knowledge to make others' learning path easier.</p>
+            </div>
+        </div>
+	</body>
+</html>
