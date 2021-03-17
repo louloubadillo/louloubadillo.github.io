@@ -1,7 +1,7 @@
 /* CORE */
 html{
 	color:#fff;
-	background-image: url("img/background.jpeg");
+  background-color: #121212;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 body {
@@ -58,8 +58,10 @@ h2.nav{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto; 
-  grid-gap: 10px;
+  position: sticky;
+  top: 0;
   margin: 0 auto;
+  background-color: #0c0c0c;
 }
 
 .logo{
@@ -67,6 +69,10 @@ h2.nav{
 	grid-row: 1/2; 
 	text-align: center;
 	padding: 10px; 
+}
+
+.logo img{
+  width: 8vw;
 }
 
 .description{

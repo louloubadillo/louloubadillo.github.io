@@ -5,57 +5,149 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	    <title>LouLouBadillo</title>
-	    <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="path-to-the-file/splide.min.js"></script>
+	    <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	    <link rel="icon" href="favicon.ico" type="image/x-icon">
 	</head>
 
 	<body>
-		<div id = "nav">
-			<div class="description">
-				<h1 class="nombre">Louloubadillo</h1>
-			</div>
+        <div class="container navbar" id="home">
+            <h1 id="title">louloubadillo</h1>
+            <div id="pages">
+                <ul>
+                    <li class="hvr-underline-from-center"><a href="#about">About Me</a></li>
+                    <li class="hvr-underline-from-center"><a href="#experience">Experience</a></li>
+                    <li class="hvr-underline-from-center"><a href="#portfolio">Portfolio</a></li>
+                    <li class="hvr-underline-from-center"><a href="#activities">Activities</a></li>
+                </ul>
+            </div>
+        </div>
 
-			<div class="menu">
-				<ul>
-					<li><a href="about.html"><h2 class="nav"> About me ·&nbsp</h2></a></li>
-					<li><a href="portfolio.html"><h2 class="nav"> Portfolio ·&nbsp</h2></a></li>
-					<li><a href=""><h2 class="nav"> Blog ·&nbsp</h2></a></li>
-					<li><a href="activities.html"><h2 class="nav"> Activities </h2></a></li>
-					
-				  </ul>
-			</div>
+        <div class="container" id="about">
+            <h2 class="subtitle">About Me</h2>
+            <p class="par1"> Hi, I am Lourdes Badillo. I study Computer Science at Tecnológico de Monterrey. 
+                I love programming &#128187;, entrepreneurship &#128161; and design &#127912;. 
+                I am interested in STEM &#128640;, writing &#9997; (I have a <a href="https://blog.louloubadillo.com/" target="_blank"><span style="color:rgb(113, 24, 155); font-weight: bold;">blog</span></a>), and photography  &#128247;. 
+            </p>
+            <div class="divider">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                </g>
+                </svg>
+            </div>
+        </div>
 
-			<div class="logo">
-				<img src="logo.png" width= 80%>
-			</div>
-		</div>
-		
-		<div id="wrapper">
-			<div class="portfolio">
-				<a href="portfolio.html" onMouseOver="document.portfolio.src='img/macbookhover.png';" onMouseOut="document.portfolio.src='img/macbook.png';"><img name="portfolio" src="img/macbook.png" width=100%></a>
-			</div>
+        <div class="container" id="experience">
+            <h2 class="subtitle">Experience</h2>
+            <div class="boxes">
+                <div class="box hvr-float">
+                    <img class="job-place" src="experience/tec_logo.png">
+                    <h2 class="job-title">Software Developer Intern</h2>
+                    <h3 class="job-dates">Jun 2020 - Dec 2020</h3>
+                    <p>Worked on two projects:</p>
+                    <ul>
+                        <li><a href="https://www.mexicovid19.app/" target="_blank">Mexicovid</a>: a data visualization tool that displays COVID-19 cases by state, municipality, and zip code in Mexico.</li>
+                        <li><a href="https://expansionurbanamty.mx/" target="_blank">Expansión Urbana Monterrey</a>: an informative website regarding the growth of the city of Monterrey and the implications it has for the whole country.
+                        </li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
 
-			<div class="activities">
-				<a href="activities.html" onMouseOver="document.activities.src='img/camarashover.png';" onMouseOut="document.activities.src='img/camaras.png';"><img name="activities" src="img/camaras.png"  width=100%></a>
-			</div>
+        <div class="container" id="portfolio">
+            <h2 class="subtitle">Portfolio</h2>
+            <div class="projects">
+                <div class="project hvr-grow mySlides fade">
+                    <img class="banner" src="portfolio/blog_banner.png">
+                    <h2>LBlog</h2>
+                    <p>My goal is to have a space where I can share what I have learned with others. <br>
+                        I decided to develop it from scratch because it sounded fun and challenging. <br>
+                        I used React and hosted it on Netlify. 
+                    </p>
+                    <div class="icons">
+                        <a href="https://blog.louloubadillo.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
+                    </div>
+                </div>
+                <div class="project hvr-grow">
+                    <img class="banner" src="portfolio/mexicovid_banner.png">
+                    <h2>MexiCOVID</h2>
+                    <p>Data visualization tool that displays COVID-19 cases by state, municipality, and zip code in Mexico. <br>
+                    I worked mostly on the data visualization of the analysis and predictions of the pandemic.</p>
+                    <div class="icons">
+                        <a href="https://github.com/mexicovid19/mexicovid19.github.io" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://mexicovid19.app/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
+                    </div>
+                </div>
+                <div class="project hvr-grow">
+                    <img class="banner" src="portfolio/expansion_banner.png">
+                    <h2>Expansión Urbana Monterrey
+                    </h2>
+                    <p>Informative website regarding the growth of the city of Monterrey and the implications it has for the whole country. <br>
+                    I worked on the design and development of the website, and on data visualization.</p>
+                    <div class="icons">
+                        <a href="https://github.com/ExpansionUrbanaMTY/FinalVersion" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://expansionurbanamty.mx/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="blog">
-				<a href="" onMouseOver="document.blog.src='img/bookhover.png';" onMouseOut="document.blog.src='img/book.png';"><img name="blog" src="img/book.png" width=70%></a>
-			</div>
+        <div class="container" id="activities">
+            <div class="content">
+                <h2 class="subtitle">Activities</h2>
+                <div class="acts">
+                    <div class="activity hvr-grow-rotate">
+                        <img class="photo" src="activity/ctrlalttec.png">
+                        <h3>Ctrl Alt Tec</h3>
+                        <p>Co-founded the first Hack Club (programming club) in Mexico, allowing students at Tec de Monterrey to become more involved in STEM.</p>
+                    </div>
+                    <div class="activity hvr-grow-rotate-left">
+                        <img class="photo" src="activity/hackathon.png">
+                        <h3>Microsoft Hackathon 2020</h3>
+                        <p>Hackathon organized for all the students whose Microsoft internships got canceled due to COVID-19.<br>
+                            My team won 2nd place.</p>
+                    </div>
+                    <div class="activity hvr-grow-rotate">
+                        <img class="photo" src="activity/congreso.png">
+                        <h3>Presentation at ITESM's Investigation Congress</h3>
+                        <p>I was invited to present my research paper "Market segmentation through Big Data at Amazon".</p>
+                    </div>
+                    <div class="activity hvr-grow-rotate-left">
+                        <img class="photo" src="activity/first.png">
+                        <h3>FIRST</h3>
+                        <p>I was part of the 3933 team, working on the programming sector (Java). <br>
+                            As a volunteer, I helped to organize different events, including FLL and FTC.</p>
+                    </div>
+                    <div class="activity hvr-grow-rotate">
+                        <img class="photo" src="activity/incmty.png">
+                        <h3>Inc Mty</h3>
+                        <p>Developed with two friends an app, we entered a contest and won the opportunity to pitch our project at INCmty, which is the largest entrepreneurship festival in Latin America.</p>
+                    </div>
+                    <div class="activity hvr-grow-rotate-left">
+                        <img class="photo" src="activity/zr.png">
+                        <h3>Zero Robotics</h3>
+                        <p>Programmed a SPHERE along with three classmates and achieved 2nd place nationally. (2D phase)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<div class="title1">
-				<a href="portfolio.html"><h2 class="touch"> Portfolio</h2></a>
-			</div>
-
-			<div class="title2">
-				<a href= > <h2 class="touch"> Blog </h2></a>
-			</div>
-
-			<div class="title3">
-				<a href="activities.html"><h2 class="touch"> Activities </h2></a>
-			</div>
+        <div class="container footer">
+            <p style="text-align: center; font-size: large; padding-bottom: 1.5vh;"> LOULOUBADILLO 2021</p>
+            <div class="socials">
+                <a href="https://github.com/louloubadillo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/lourdesbadillo/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true""></i> </a>
+            </div>
+        </div>
 	</body>
-
 
 </html>
