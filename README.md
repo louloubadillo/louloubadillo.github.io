@@ -1,14 +1,14 @@
-## LOULOUBADILLO
+# LOULOUBADILLO
 
-This is my personal website. 
+Welcome to my portfolio's repo. 👋 
 
-### Content
+## About Me
+My name is Lourdes Badillo, I'm a Computer Science student. <br>
+I am interested in programming, entrepreneurship and design. <br>
+I enjoy working on projects and learning new things. 
 
-The different sections are:
-- Home
-- Portfolio
-- Activities
-- Blog
+## About my Portfolio
+This site is built with HTML + CSS and a little bit of JS. <br>
 
-*This website is still under construction* 
+
 
