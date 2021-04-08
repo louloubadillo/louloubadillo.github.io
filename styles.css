@@ -75,7 +75,6 @@ body{
     color: #80ced7;
 }
 
-
 .subtitle{
     padding-top: 4vh;
     font-size: 1.8em;
@@ -86,6 +85,8 @@ body{
     width: 100%;
     height: auto;
     background-image: linear-gradient(-110deg, #63c7b2 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
 }
 
 #about a{
@@ -97,13 +98,11 @@ body{
 }
 
 .par1{
-    padding-bottom: 4vh;
-    padding: 3vh 8vw;
+    padding: 3vh 8vw 6vh 8vw;
+    text-align: center;
 }
 
-#divider{
-    margin:0; 
-    padding: 0;
+.divider{
     width: 100%;
 }
 
@@ -111,7 +110,6 @@ body{
     width: 100%;
     height: auto;
     background-color:#121212;
-    margin: -6vh 0; 
 }
 
 .boxes{
@@ -255,7 +253,13 @@ body{
 .activity p{
     text-align: center;
     font-size: 1em;
-    padding: 10px;
+    padding: 1vh 2vw 2vh 2vw;
+}
+
+.activity-date{
+    padding: 0;
+    padding-top: 1vh;
+    color: #252429;
 }
 
 .photo{
@@ -381,12 +385,13 @@ body{
 }
 
 
+/* Daniel Österman 2019 Wave Animation */
 .waves {
     position:relative;
     width: 100%;
     height:10vh;
     min-height:50px;
-    padding-bottom: 24px;
+    margin-bottom:-7px; /*Fix for safari gap*/
 }
   
   /* Animation */
@@ -421,10 +426,9 @@ body{
   /*Shrinking for mobile*/
   @media (max-width: 768px) {
     .waves {
-      height:50px;
-      min-height:50px;
+      height:10vh;
     }
   }
-  }
+  
 
   
