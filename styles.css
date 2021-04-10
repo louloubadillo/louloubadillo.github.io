@@ -24,6 +24,10 @@ body{
     height: 100%;
 }
 
+#title{
+    margin-top: 15px;
+}
+
 .content{
     margin: 0px 14vw;
     max-width: 960px;
