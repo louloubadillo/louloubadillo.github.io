@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Hey, my name is Lourdes Badillo and I love programming.">
         <title>LouLouBadillo</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -65,38 +66,65 @@
         <div class="container" id="portfolio">
             <h2 class="subtitle">Portfolio</h2>
             <div class="projects">
-                <div class="project hvr-grow mySlides fade">
+                <div class="project">
+                    <img class="banner" src="portfolio/orbit_banner.png">
+                    <h2>0rb1t</h2>
+                    <h5>Class Project</h5>
+                    <p>
+                        Developed a game using Unity, with the objective of getting kids interested in STEM. <br>
+                        Developed a REST API using NodeJS and Express, in order to generate and show interesting graphs from the game's data, which is stored in a MySQL database. 
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/Ax010tl/website" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://steam-orbit.herokuapp.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img class="banner" src="portfolio/iot_banner.png">
+                    <h2> Vital Signs Tracker </h2>
+                    <h5>Class Project</h5>
+                    <p> Developed a prototype using Arduino, that allows users to record their oxygenation level and heart rate. <br> The information is stored in a MySQL database, which produces a dashboard that shows each user's statistics with Tableau.
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/louloubadillo/Equipo_no_1_RetoIot" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="project">
                     <img class="banner" src="portfolio/blog_banner.png">
                     <h2>LBlog</h2>
+                    <h5>Personal Project</h5>
                     <p>My goal is to have a space where I can share what I have learned with others. <br>
-                        I decided to develop it from scratch because it sounded fun and challenging. <br>
-                        I used React and hosted it on Netlify. 
+                        I decided to build a blog with Gatsby, which uses React for rendering and GraphQL for data fetching. The site deploys to Netlify directly from Github.
                     </p>
                     <div class="icons">
                         <a href="https://blog.louloubadillo.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
                     </div>
                 </div>
-                <div class="project hvr-grow">
+                
+                <div class="project">
                     <img class="banner" src="portfolio/mexicovid_banner.png">
                     <h2>MexiCOVID</h2>
-                    <p>Data visualization tool that displays COVID-19 cases by state, municipality, and zip code in Mexico. <br>
-                    I worked mostly on the data visualization of the analysis and predictions of the pandemic.</p>
+                    <h5>Work Project</h5>
+                    <p>Data visualization tool, developed with React, that displays COVID-19 cases in Mexico.
+                    Worked with a multidisciplinary team of professors and students. I contributed mostly to the analysis and predictions of the pandemic section.</p>
                     <div class="icons">
                         <a href="https://github.com/mexicovid19/mexicovid19.github.io" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         <a href="https://mexicovid19.app/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
                     </div>
                 </div>
-                <div class="project hvr-grow">
+                <div class="project">
                     <img class="banner" src="portfolio/expansion_banner.png">
-                    <h2>Expansión Urbana Monterrey
-                    </h2>
+                    <h2>Expansión Urbana Monterrey</h2>
+                    <h5>Work Project</h5>
                     <p>Informative website regarding the growth of the city of Monterrey and the implications it has for the whole country. <br>
-                    I worked on the design and development of the website, and on data visualization.</p>
+                    I worked on the design and development of the website and on data visualization, using HTML, CSS and JavaScript.</p>
                     <div class="icons">
                         <a href="https://github.com/ExpansionUrbanaMTY/FinalVersion" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         <a href="https://expansionurbanamty.mx/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
                     </div>
                 </div>
+                <button class="carrousel-next"> &#62; </button>
+                <button class="carrousel-prev"> &#60; </button>
             </div>
         </div>
 
@@ -116,7 +144,7 @@
                         <img class="photo" src="activity/ctrlalttec.png">
                         <h3>Ctrl Alt Tec</h3>
                         <h5 class="activity-date">2018 - Present</h5>
-                        <p>Co-founded the first Hack Club (programming club) in Mexico, allowing students at Tec de Monterrey to become more involved in STEM.</p>
+                        <p>Co-founded the first Hack Club (programming club) in Mexico, allowing students at Tec de Monterrey to become more involved in STEM. <br> I organize events, meetings, workshops and classes. </p>
                     </div>
                     <div class="activity hackathon hvr-grow-rotate-left">
                         <img class="photo" src="activity/hackathon.png">
@@ -155,7 +183,7 @@
                         <img class="photo" src="activity/first.png">
                         <h3>FIRST</h3>
                         <h5 class="activity-date">Sep 2017 – Apr 2019</h5>
-                        <p>I was part of the 3933 team, working on the programming sector (Java).
+                        <p>I was part of the 3933 team, helping programming our robot using Java. <br>
                         As a volunteer, I helped organizing different events, including FLL and FTC.</p>
                     </div>
                     <div class="activity presentation hvr-grow-rotate-left">
@@ -225,6 +253,10 @@
                 this.className += " active";
               });
             }
+        </script>
+        <script src="./carrousel.js"></script>
+        <script>
+            let carrousel = new Carrousel(document.querySelector(".projects"))
         </script>
     </body>
 </html>
