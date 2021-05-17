@@ -180,7 +180,7 @@ body{
 .projects{
     display: flex;
     padding: 0 !important;
-    margin: 5vh 50px;
+    margin: 5vh 5vw;
     align-items: center;
     overflow: auto;
     scroll-behavior: smooth;
@@ -199,8 +199,8 @@ body{
     margin-bottom: auto;
     display: inline-block;
     background: white;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 20px;
     text-decoration: none;
     cursor: pointer;
@@ -213,7 +213,7 @@ body{
 }
 .project{
     border-radius: 12px;
-    margin: 2vh 20px;
+    margin: 2vh 1vw;
     background-color: #252429;
     color: white;
     text-align: center;
@@ -222,7 +222,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 380px;
+    min-width: 380px;
+    width: 27vw;
+    max-width: 400px;
     box-sizing: border-box;
     position: relative;
 }
