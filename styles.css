@@ -55,7 +55,7 @@ body{
 .navbar ul{
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -148,9 +148,8 @@ body{
     padding: 1vh 0;
 }
 
-.box li{
-    left: -10px;
-    margin-left: 2vw;
+.box ul{
+    list-style-position: inside;
 }
 
 .box li{
