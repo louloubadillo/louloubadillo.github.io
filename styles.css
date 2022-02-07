@@ -230,6 +230,62 @@ body{
     color:#80ced7; 
 }
 
+.tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+.tag{
+    margin: 0 1vw; 
+    padding: 1vh 0.5vw;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+.tag:nth-child(odd){
+    background-color: #716fa7;
+    color: white;
+}
+.tag:nth-child(even){
+    background-color: #5c9b9a;
+    color: white;
+}
+
+.archive{
+    display:none; 
+}
+
+#project-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+}
+
+.project-btn {
+    border: none;
+    outline: none;
+    padding: 1vh 1vw;
+    margin: 4vh 1vw 2vh 1vw;
+    background-color: #66b0af;
+    color: white;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: large;
+}
+  
+.project-btn:hover {
+    background-color: #666;
+}
+  
+.project-btn.active {
+    background-color: #356160;
+}
+
 #activities{
     width: 100%;
     height: auto;

@@ -76,9 +76,31 @@
             <h2 class="subtitle">Portfolio</h2>
             <div class="projects">
                 <div class="project">
+                    <img class="banner" src="portfolio/visitapp-banner.png">
+                    <h2>VisitApp</h2>
+                    <h5>Class Project</h5>
+                    <div class="tags">
+                        <div class="tag"> Kotlin </div>
+                        <div class="tag"> NodeJS</div>
+                        <div class="tag"> MySQL</div>
+                    </div>
+                    <p>
+                        Developed an app to help the organization Cáritas de Monterrey, to keep track of its visitors and to manage them better. <br>
+                        Developed a REST API using NodeJS and Express,where authorized personnel may add, modify, erase and visualize the app's data, which is stored in a MySQL database. 
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/louloubadillo/VisitAPI" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="project">
                     <img class="banner" src="portfolio/orbit_banner.png">
                     <h2>0rb1t</h2>
                     <h5>Class Project</h5>
+                    <div class="tags">
+                        <div class="tag"> C# (Unity)</div>
+                        <div class="tag"> NodeJS</div>
+                        <div class="tag"> MySQL</div>
+                    </div>
                     <p>
                         Developed a game using Unity, with the objective of getting kids interested in STEM. <br>
                         Developed a REST API using NodeJS and Express, in order to generate and show interesting graphs from the game's data, which is stored in a MySQL database. 
@@ -88,10 +110,14 @@
                         <a href="https://steam-orbit.herokuapp.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project archive">
                     <img class="banner" src="portfolio/iot_banner.png">
                     <h2> Vital Signs Tracker </h2>
                     <h5>Class Project</h5>
+                    <div class="tags">
+                        <div class="tag"> Arduino</div>
+                        <div class="tag"> MySQL</div>
+                    </div>
                     <p> Developed a prototype using Arduino, that allows users to record their oxygenation level and heart rate. <br> The information is stored in a MySQL database, which produces a dashboard that shows each user's statistics with Tableau.
                     </p>
                     <div class="icons">
@@ -102,18 +128,26 @@
                     <img class="banner" src="portfolio/blog_banner.png">
                     <h2>LBlog</h2>
                     <h5>Personal Project</h5>
+                    <div class="tags">
+                        <div class="tag"> React (Gatsby) </div>
+                        <div class="tag"> GraphQL </div>
+                        <div class="tag"> Netlify </div>
+                    </div>
                     <p>My goal is to have a space where I can share what I have learned with others. <br>
-                        I decided to build a blog with Gatsby, which uses React for rendering and GraphQL for data fetching. The site deploys to Netlify directly from Github.
+                        I decided to build a blog with Gatsby, which uses React for rendering and GraphQL for data fetching. The site deploys to Netlify directly from GitHub.
                     </p>
                     <div class="icons">
                         <a href="https://blog.louloubadillo.com/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
                     </div>
                 </div>
                 
-                <div class="project">
+                <div class="project archive">
                     <img class="banner" src="portfolio/mexicovid_banner.png">
                     <h2>MexiCOVID</h2>
                     <h5>Work Project</h5>
+                    <div class="tags">
+                        <div class="tag"> React </div>
+                    </div>
                     <p>Data visualization tool, developed with React, that displays COVID-19 cases in Mexico.
                     Worked with a multidisciplinary team of professors and students. I contributed mostly to the analysis and predictions of the pandemic section.</p>
                     <div class="icons">
@@ -121,10 +155,13 @@
                         <a href="https://mexicovid19.app/" target="_blank"><i class="fa fa-laptop" aria-hidden="true""></i> </a>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project archive">
                     <img class="banner" src="portfolio/expansion_banner.png">
                     <h2>Expansión Urbana Monterrey</h2>
                     <h5>Work Project</h5>
+                    <div class="tags">
+                        <div class="tag"> HTML, CSS & JavaScript </div>
+                    </div>
                     <p>Informative website regarding the growth of the city of Monterrey and the implications it has for the whole country. <br>
                     I worked on the design and development of the website and on data visualization, using HTML, CSS and JavaScript.</p>
                     <div class="icons">
@@ -133,6 +170,12 @@
                     </div>
                 </div>
             </div>
+            <!--show all button-->
+            <div id="project-btns">
+                <button class="project-btn" onclick="showMore()"> Show more</button>
+                <button class="project-btn active" onclick="showMore()"> Show less</button>
+            </div>
+            
         </div>
 
         <div class="container" id="activities">
@@ -154,8 +197,22 @@
                         <p>Co-founded the first Hack Club (programming club) in Mexico, allowing students at Tec de Monterrey to become more involved in STEM. <br> I organize events, meetings, workshops and classes. </p>
                     </div>
                     <div class="activity hackathon hvr-grow-rotate-left">
+                        <img class="photo" src="activity/msh2021.png">
+                        <h3>Microsoft Student Hackathon 2021</h3>
+                        <h5 class="activity-date">Oct 2021</h5>
+                        <p>My team and I won first place in the “Hack for education” category. <br>
+                        We worked on a series of lessons, using .NET Interactive, where we explain Computer Science fundamentals as we would have wanted to learn them. </p>
+                    </div>
+                    <div class="activity volunteering hvr-grow-rotate">
+                        <img class="photo" src="activity/yolia-education.png">
+                        <h3>Yolia - Education</h3>
+                        <h5 class="activity-date">Aug 2021 - Dec 2021</h5>
+                        <p>Worked with the organization <a href="https://www.yolia.org.mx/">Yolia</a>, which offers young people at high social risk a place to live, eat and learn. <br>
+                        My team and I developed a website that generates math exercises for kids in primary school.   </p>
+                    </div>
+                    <div class="activity hackathon hvr-grow-rotate-left">
                         <img class="photo" src="activity/hackathon.png">
-                        <h3>Microsoft Hackathon</h3>
+                        <h3>Microsoft Hackathon 2020</h3>
                         <h5 class="activity-date">Jul 2020</h5>
                         <p>Hackathon organized for all the students whose Microsoft internships got canceled due to COVID-19.<br> Developed a bot, using the Azure Bot Service, and integrated it on a website. My team won 2nd place.</p>
                     </div>
@@ -267,5 +324,26 @@
             gtag('js', new Date());
             gtag('config', 'G-62ZQG54JRS');
           </script>
+        <script>
+            //when the user selects show more, show the archive projects
+            function showMore() {
+                //get the projects
+                var projects = document.getElementsByClassName("project");
+                for(var i = 0; i < projects.length; i++) {
+                    //if project is class archive
+                    if(projects[i].className.indexOf("archive") > -1) {
+                        //show it
+                        if(projects[i].style.display == "none") {
+                            projects[i].style.display = "block";
+                        }
+                        else{
+                            projects[i].style.display = "none";
+                        }
+                    }
+                }
+            }
+            showMore(); 
+
+        </script>
     </body>
 </html>
