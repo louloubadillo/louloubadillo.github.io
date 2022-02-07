@@ -172,8 +172,7 @@
             </div>
             <!--show all button-->
             <div id="project-btns">
-                <button class="project-btn" onclick="showMore()"> Show more</button>
-                <button class="project-btn active" onclick="showMore()"> Show less</button>
+                <button class="project-btn" id="show-btn" onclick="showMore()"> Show more</button>
             </div>
             
         </div>
@@ -335,12 +334,18 @@
                         //show it
                         if(projects[i].style.display == "none") {
                             projects[i].style.display = "block";
+                            //change the button text
+                            document.getElementById("show-btn").innerHTML = "Show less";
                         }
                         else{
                             projects[i].style.display = "none";
                         }
                     }
+                    else{
+                        document.getElementById("show-btn").innerHTML = "Show more";
+                    }
                 }
+                
             }
             showMore(); 
 
